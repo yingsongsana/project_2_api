@@ -1,7 +1,7 @@
-class WinesController < ApplicationController
-  before_action :set_wine, only: [:show, :update, :destroy]
-  # Once I change to ProtectedController and add relationship from user to wine... I can do below?
-  # skip_before_action :authenticate, only: %i[index show]
+# frozen_string_literal: true
+
+class WinesController < ProtectedController
+  before_action :set_wine, only: %i[show update destroy]
 
   # GET /wines
   def index
@@ -17,7 +17,7 @@ class WinesController < ApplicationController
 
   # POST /wines
   def create
-    @wine = Wine.new(wine_params)
+    @wine = current_user.wines.build(wine_params)
 
     if @wine.save
       render json: @wine, status: :created, location: @wine
@@ -41,13 +41,14 @@ class WinesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_wine
-      @wine = Wine.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def wine_params
-      params.require(:wine).permit(:style, :variety, :producer, :appearance, :aroma, :tasting_notes, :memories)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_wine
+    @wine = current_user.wines.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def wine_params
+    params.require(:wine).permit(:style, :variety, :producer, :appearance, :aroma, :tasting_notes, :memories, :user_id)
+  end
 end
