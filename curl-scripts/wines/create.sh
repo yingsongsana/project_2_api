@@ -13,7 +13,9 @@ curl "http://localhost:4741/wines" \
       "appearance": "'"${APPEARANCE}"'",
       "aroma": "'"${AROMA}"'",
       "tasting_notes": "'"${NOTES}"'",
-      "memories": "'"${MEM}"'"
+      "memories": "'"${MEM}"'",
+      "name": "'"${NAME}"'",
+      "country": "'"${COUNTRY}"'"
     }
   }'
 
