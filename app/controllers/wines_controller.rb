@@ -5,7 +5,7 @@ class WinesController < ProtectedController
 
   # GET /wines
   def index
-    @wines = Wine.all
+    @wines = current_user.wines.all
 
     render json: @wines
   end
