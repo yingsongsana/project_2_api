@@ -6,6 +6,7 @@ Aside from creating, they are also able to update, delete, and view each entry o
 their choosing. As a result, it is a complete REST-ful API.
 
 [Link to deployed back-end](https://whispering-oasis-16021.herokuapp.com/)
+[Link to deployed front-end] (https://yingsongsana.github.io/wine-tracker-client/)
 [Link to front-end repository] (https://github.com/yingsongsana/wine-tracker-client)
 
 ### Process and planning
