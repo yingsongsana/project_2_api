@@ -5,6 +5,7 @@ user is able to create new journal entries for each wine they'd like to have a r
 Aside from creating, they are also able to update, delete, and view each entry of
 their choosing. As a result, it is a complete REST-ful API.
 
+[Link to deployed back-end](https://whispering-oasis-16021.herokuapp.com/)
 [Link to front-end repository] (https://github.com/yingsongsana/wine-tracker-client)
 
 ### Process and planning
