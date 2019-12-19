@@ -1,13 +1,13 @@
 # Wine Journal Application/Back-end
 
-This is part of a full-stack project utilizing Rails and ActiveRecord to create API as well as buidling front-end from Javascript, HTML, CSS, JQuery, Bootstrap, and Handlebars. Within this application, user is able to sign-up and create an account. Once signed-in,
+This is part of a full-stack project utilizing Rails and ActiveRecord to create API as well as buidling front-end from Javascript, HTML, CSS, jQuery, Bootstrap, and Handlebars. Within this application, user is able to sign-up and create an account. Once signed-in,
 user is able to create new journal entries for each wine they'd like to have a record of.
 Aside from creating, they are also able to update, delete, and view each entry of
 their choosing. As a result, it is a complete REST-ful API.
 
-[Link to deployed back-end](https://whispering-oasis-16021.herokuapp.com/)
-[Link to deployed front-end] (https://yingsongsana.github.io/wine-tracker-client/)
-[Link to front-end repository] (https://github.com/yingsongsana/wine-tracker-client)
+* [Link to deployed back-end](https://whispering-oasis-16021.herokuapp.com/)
+* [Link to deployed front-end](https://yingsongsana.github.io/wine-tracker-client/)
+* [Link to front-end repository](https://github.com/yingsongsana/wine-tracker-client)
 
 ### Process and planning
 
@@ -21,7 +21,7 @@ how to better communicate my problems.
 
 ### Items to work on for future iterations
 
-..* Additional resources within database with many-to-many relationships
-..* `OpenReadController` class so that users are able to share the wine resource with others.
+* Additional resources within database with many-to-many relationships
+* `OpenReadController` class so that users are able to share the wine resource with others.
 
-[See my ERD for resources here] (https://imgur.com/Niey3kE)
+[See my ERD for resources here](https://imgur.com/Niey3kE)
